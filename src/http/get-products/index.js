@@ -6,7 +6,7 @@ exports.handler = async function products (req) {
   })
   // Return oldest product first
   // TODO remove this
-  product.sort((a, b) => a.created > b.created)
+  products.sort((a, b) => a.created > b.created)
   return {
     statusCode: 201,
     headers: {
